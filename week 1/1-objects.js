@@ -11,33 +11,72 @@
 
 // Example format of an intern object: 1, examples@you.edu, Example, F
 const example = {
-    id: 0,
-    name: "Example",
-    email: "examples@you.edu",
-    gender: "M",
-  }
-  
-  // Write your intern objects here:
-  
-  
-  // ==== Challenge 2: Reading Object Data ==== 
-  // Once your objects are created, log out the following requests from HR into the console:
-  
-  // Mitzi's name
-  
-  // Kennan's ID
-  
-  // Keven's email
-  
-  // Gannie's name
-  
-  // Antonietta's Gender
-  
-  // ==== Challenge 3: Object Methods ==== 
-  // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-  // console.log(kennan.speak());
-  
-  // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-  //console.log(antonietta.multiplyNums(3,4));
-  
-  
+  id: 0,
+  name: "Example",
+  email: "examples@you.edu",
+  gender: "M",
+}
+
+// Write your intern objects here:
+const firstIntern = {
+  id:  1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F",
+};
+
+const secondIntern = {
+ id: 2,
+ name: "Kennan",
+ email: "kdiben1@tinypic.com",
+ gender: "M",
+};
+
+const thirdIntern = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M",
+};
+
+const fourthIntern = {
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "F",
+};
+
+const fifthIntern = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F",
+};
+
+
+
+// ==== Challenge 2: Reading Object Data ==== 
+// Once your objects are created, log out the following requests from HR into the console:
+
+// Mitzi's name
+console.log(Mitzi.firstName);
+
+// Kennan's ID
+console.log(Kenan.id);
+
+// Keven's email
+console.log(Keven.email);
+
+// Gannie's name
+console.log(Gannie.firstName);
+
+// Antonietta's gender
+console.log(Antonietta.gender);
+
+
+// ==== Challenge 3: Object Methods ==== 
+// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+console.log(Kennan.speak("Hello, my name is Kennan!"));
+
+// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+console.log(antonietta.multiplyNums(3,4));
