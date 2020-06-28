@@ -8,7 +8,7 @@ Using the concepts learned this week, Build a Todo List Application using HTML, 
 - View all Todo List Items
 - Delete a Todo List Item
 - Update a Todo List Item
-
+    
 ### STRETCH (Start this when you're done with MVP)
 - Create a Calculator using HTML, CSS and Javascript
 
