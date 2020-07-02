@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>To-do App </title>
   </head>
-  <body>
-   <div class="main-div">
-        <input type="text" id="input"
-        <button id= "enterBtn">Enter</button>
-        <hr>
-        <ul>
 
-        </ul>
-    </div>
+  <body>
+  <div class="main-div"></div>
+      <h1>To do List</h1>
+      <form id="todoForm"></form>
+        <input type="text" id="todoInput">
+        <button type= "enterBtn" onclick="todoList()">Enter</button>
+        <hr>
+        <ul id="todoList"></ul>
+  </div>
     <script type="text/javascript" src="app.js"></script>
  </body>
  </html>
+ 

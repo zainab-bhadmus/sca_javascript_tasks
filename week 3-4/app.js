@@ -29,4 +29,6 @@ const inputEvent =()=>{
 enterBtn.addEventListener("click" , addTask);
 input,addEventListener("keypress" , InputEvent)
 
-console.log()
+
+
+}
