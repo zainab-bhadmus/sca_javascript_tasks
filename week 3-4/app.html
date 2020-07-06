@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>To-do App </title>
+  </head>
+
+  <body>
+  <div class="main-div"></div>
+      <h1>To do List</h1>
+        <input type="text" id="input">
+        <button id="entBtn" onclick="createTodo()">Enter</button>
+        <hr>
+        <ul id="todoList">
+
+        </ul>
+  </div>
+    <script>
+
+   
+
+        const createTodo = ()=> {
+        let li = document.createElement('li');
+        let inputValue = document.getElementById('input').value;
+        let t = document.createTextNode(inputValue);
+        li.appendChild(t);
+
+        if (inputValue === ''){
+            alert('Add a Task');
+        }else {
+            document.getElementById('todoList').appendChild(li);
+        }
+        document.getElementById('input').value = '';
+
+        let span = document.createElement("button");
+        let txt = document.createTextNode('\u00D7');
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+        
+
+        let cancel = document.getElementsByClassName("close");
+        let i;
+        for (i = 0; i < cancel.length; i++) {
+        close[i].onclick = function() {
+            let div = this.parentElement;
+            div.style.display = "none";
+        }
+            }
+    }
+    </script>
+     </body>
+</html>
+ 
+
+
