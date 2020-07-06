@@ -10,10 +10,7 @@ const createTodo = ()=>{
     cancelTodo.appendChild(document.createTextNode("X"))
     cancelTodo.addEventListener('click' ,()=>{
         li.classList.toggle('cancel')
-    }); 
-    clearTodo.addEventListener("click"())=> {
-        ul.innerHTML = ""    
-    });
+    })
     li.appendChild(cancelTodo);
 
 
@@ -30,7 +27,7 @@ const inputEvent =()=>{
     }
 }
 enterBtn.addEventListener("click" , addTask);
-input.addEventListener("keypress" , InputEvent)
+input,addEventListener("keypress" , InputEvent)
 
 
 
