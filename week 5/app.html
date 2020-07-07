@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>To-do App </title>
+  </head>
+
+  <body>
+  <div class="main-div"></div>
+      <h1>To do List</h1>
+      <form id="todoForm"></form>
+        <input type="text" id="input">
+        <button id= "enterBtn" onclick="todoList()">Enter</button>
+        <button id= "clear" >Clear</button>
+        <hr>
+        <ul id="todoList"></ul>
+  </div>
+    <script>
+    const input = document.getElementById('input');
+    const enterBtn = document.getElementById('enterBtn');
+    const ul = document.querySelector('ul');
+
+    const createTodo = ()=> {
+        let li = document.createElement('li')
+        li.textContent = input.value
+        ul.appendChild(li)
+        let cancelTodo =  document.createElement('button')
+        cancelTodo.appendChild(document.createTextNode("X"))
+        cancelTodo.addEventListener('click',()=>{
+            li.classList.toggle('cancel')
+        });
+        clearTodo.addEventListener("click",()=> {
+            ul.innerHTML = ""    
+        })
+        li.appendChild(cancelTodo);
+
+
+        input.value =""
+    }
+    const addTask = ()=>{
+        if(input.value.length > 0){
+            createTodo()
+        }
+    }
+    const inputEvent =()=>{
+        if(input.value.length > 0 && event.which) {
+            createTodo() 
+        }
+    }
+    enterBtn.addEventListener("click" , addTask);
+    input.addEventListener("keypress" , InputEvent);
+
+    </script>
+     </body>
+</html>
+ 
