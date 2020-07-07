@@ -1,1 +1,24 @@
+<<<<<<< HEAD
 git re
+=======
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+    body {
+        background-color: pink;
+        max-width: 550px;
+        margin: auto;
+      }
+      
+      input {
+        padding-top: 25px;
+        width: 450px;
+        height: 50px;
+        font-size: 30;
+        border: 0 ;
+      }
+     
+>>>>>>> parent of 10adf74... Revert "week3solution"
