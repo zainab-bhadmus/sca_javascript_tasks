@@ -18,7 +18,7 @@ class Booklist extends Book{
         this.arrayofbooks = ['arrayofbooks']
     }
 }
-    add.Book();{
+    add.book();{
         console.log()
     }
 
