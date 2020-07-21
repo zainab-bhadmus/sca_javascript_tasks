@@ -3,19 +3,22 @@ const cat = {
     hunger: 0,
     lonliness: 0,
     happiness: 0,
-    play: function() {
-      this.hunger += 5;
-      this.hunger += 5;
-      this.happiness += 20;
-    },
-    eat: function() {
-      this.hunger -= 5;
-      this.happiness += 5;
-    },
-    pet: function() {
-      this.lonliness -= 5;
-      this.tiredness += 5
-    },
-    sleep: function {
-      this.tiredness -= 5;
-    }
+
+  tiredness (){
+     console.log('cat wants to sleep')
+  },
+  hunger (){
+      console.log('cat wants to be fed')
+      console.log('cat does not want to be fed')
+  },
+  lonliness(){
+    console.log('cat wants to be petted')
+  },
+  happiness(){
+    console.log('cat is very happy')
+  }
+}
+cat.tiredness()
+cat.hunger()
+cat.lonliness()
+cat.happiness()
