@@ -6,6 +6,7 @@
 
 ```
 var a = 1;
+
 function someFunction(number) {
   function otherFunction(input) {
     return a;
